@@ -13,7 +13,21 @@ public class PersonServices {
 	
 	//Simular um id do Banco de Dados
 	private final AtomicLong counter = new AtomicLong();
-
+	
+	public Person create(Person person){
+		//lógica para base de dados
+		return person;
+	}
+	
+	public Person update(Person person){
+		//lógica para base de dados
+		return person;
+	}
+	
+	public void delete(String id){
+		
+	}
+	
 	public Person findById(String id) {
 		Person person = new Person();
 		person.setId(counter.incrementAndGet());
